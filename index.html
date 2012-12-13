@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Carlos Blanco">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/custom.css" rel="stylesheet" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
+		<title>GeoApp</title>
+	</head>
+	<body onLoad="localizar()">
+		<div id="header">
+			<h3>GeoApp</h3>
+			<div id="save">Save Position</div>
+		</div>
+		<div id="map"></div>
+		<div id="pop">
+			<ul>
+				<li onClick="guardarPosicion('pos1lat','pos1lon')">Save in Position 1</li>
+				<li onClick="guardarPosicion('pos2lat','pos2lon')">Save in Position 2</li>
+				<li onClick="guardarPosicion('pos3lat','pos3lon')">Save in Position 3</li>
+				<li onClick="guardarPosicion('pos4lat','pos4lon')">Save in Position 4</li>
+			</ul>
+		</div>
+		<div id="buttons">
+			<ul>
+				<li class="button" onClick="mostrarPosicion('pos1lat','pos1lon')">Position 1</li>
+				<li class="button" onClick="mostrarPosicion('pos2lat','pos2lon')">Position 2</li>
+				<li class="button" onClick="mostrarPosicion('pos3lat','pos3lon')">Position 3</li>
+				<li class="button" onClick="mostrarPosicion('pos4lat','pos4lon')">Position 4</li>
+			</ul>
+			
+			<!-- <input type="button" class="button" value="Mostrar 1" onClick="mostrarPosicion('pos1lat','pos1lon')">
+			<input type="button" class="button" value="Mostrar 2" onClick="mostrarPosicion('pos2lat','pos2lon')">
+			<input type="button" class="button" value="Mostrar 3" onClick="mostrarPosicion('pos3lat','pos3lon')">
+			<input type="button" class="button" value="Mostrar 4" onClick="mostrarPosicion('pos4lat','pos4lon')"> -->
+			<!-- <input type="button" class="guardar" value="Guardar 1" onClick="guardarPosicion('pos1lat','pos1lon')">
+			<input type="button" class="guardar" value="Guardar 2" onClick="guardarPosicion('pos2lat','pos2lon')">
+			<input type="button" class="guardar" value="Guardar 3" onClick="guardarPosicion('pos3lat','pos3lon')">
+			<input type="button" class="guardar" value="Guardar 4" onClick="guardarPosicion('pos4lat','pos4lon')"> -->
+		</div>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	    <script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>	
